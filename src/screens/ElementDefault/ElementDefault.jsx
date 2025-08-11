@@ -1,76 +1,76 @@
 import React, { useEffect } from "react";
 import "./style.css";
-import Ad3 from '../../../public/ad3.mp4'
+import Ad1 from "../../../public/ad1.mp4";
+import Ad2 from "../../../public/ad2.mp4";
+import Ad3 from "../../../public/ad3.mp4";
 
 export const ElementDefault = () => {
-
   useEffect(() => {
-     let deliveryintervalId = null;
+    let deliveryintervalId = null;
 
     function initDeliveryInfo() {
+      setTimeout(() => {
+        const deliveryInfoElements = document.querySelectorAll(
+          ".troopod_delivery_info"
+        );
+        const deliveryInfoLength = 4; // Updated to match the actual number of elements
 
-        setTimeout(() => {
-            const deliveryInfoElements = document.querySelectorAll('.troopod_delivery_info');
-            const deliveryInfoLength = 3;
-    
-            if (deliveryInfoElements.length === deliveryInfoLength) {
-                let currentIndex = 0;
-    
-                if (deliveryintervalId) {
-                    clearInterval(deliveryintervalId); 
-                }
-    
-                const showNextItem = function () {
-                    const currentItem = deliveryInfoElements[currentIndex];
-                    const nextIndex = (currentIndex + 1) % deliveryInfoElements.length;
-                    const nextItem = deliveryInfoElements[nextIndex];
-    
-                    if (currentItem && nextItem) {
-                        currentItem.classList.remove('active');
-                        nextItem.classList.add('active');
-                        currentIndex = nextIndex;
-                    }
-                };
-    
-                deliveryInfoElements.forEach(el => el.classList.remove('active'));
-                deliveryInfoElements[0]?.classList.add('active');
-    
-                deliveryintervalId = setInterval(showNextItem, 3000); 
-            } else {
-                initDeliveryInfo(); 
+        if (deliveryInfoElements.length === deliveryInfoLength) {
+          let currentIndex = 0;
+
+          if (deliveryintervalId) {
+            clearInterval(deliveryintervalId);
+          }
+
+          const showNextItem = function () {
+            const currentItem = deliveryInfoElements[currentIndex];
+            const nextIndex = (currentIndex + 1) % deliveryInfoElements.length;
+            const nextItem = deliveryInfoElements[nextIndex];
+
+            if (currentItem && nextItem) {
+              currentItem.classList.remove("active");
+              nextItem.classList.add("active");
+              currentIndex = nextIndex;
             }
-        }, 500);
+          };
+
+          deliveryInfoElements.forEach((el) => el.classList.remove("active"));
+          deliveryInfoElements[0]?.classList.add("active");
+
+          deliveryintervalId = setInterval(showNextItem, 3000);
+        } else {
+          initDeliveryInfo();
+        }
+      }, 500);
     }
-    
+
     initDeliveryInfo();
   }, []);
-  
-useEffect(() => {
-  const nav = document.getElementById("stickyNav");
-  const navOffset = nav.offsetTop;
 
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > navOffset) {
-      nav.classList.add("sticky");
-    } else {
-      nav.classList.remove("sticky");
-    }
-  });
+  useEffect(() => {
+    const nav = document.getElementById("stickyNav");
+    const navOffset = nav.offsetTop;
 
-}, []);
-
-useEffect(() => {
-  function setActiveBreadcrumb() {
-    const hash = window.location.hash;
-    document.querySelectorAll('.breadcrum').forEach(link => {
-      link.classList.toggle('active', link.getAttribute('href') === hash);
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > navOffset) {
+        nav.classList.add("sticky");
+      } else {
+        nav.classList.remove("sticky");
+      }
     });
-  }
+  }, []);
 
-  window.addEventListener('DOMContentLoaded', setActiveBreadcrumb);
-  window.addEventListener('hashchange', setActiveBreadcrumb);
+  useEffect(() => {
+    function setActiveBreadcrumb() {
+      const hash = window.location.hash;
+      document.querySelectorAll(".breadcrum").forEach((link) => {
+        link.classList.toggle("active", link.getAttribute("href") === hash);
+      });
+    }
 
-}, []);
+    window.addEventListener("DOMContentLoaded", setActiveBreadcrumb);
+    window.addEventListener("hashchange", setActiveBreadcrumb);
+  }, []);
 
   return (
     <div className="element-default">
@@ -109,14 +109,15 @@ useEffect(() => {
               {/* Editorial-style gallery matching ad visuals */}
               <div className="product-gallery editorial-style">
                 <div className="main-image">
-                   <video src={Ad3} 
-                        autoPlay={true}
-                        loop
-                        muted={true}
-                        onClick="this.muted = !this.muted"
-                        playsInline={true}
-                        class="video">
-                    </video>
+                  <video
+                    src={Ad3}
+                    autoPlay={true}
+                    loop
+                    muted={true}
+                    onClick="this.muted = !this.muted"
+                    playsInline={true}
+                    class="video"
+                  ></video>
                 </div>
                 <div className="detail-grid">
                   <img src="./img_grid1.jpg" alt="Premium suede close-up" />
@@ -195,24 +196,32 @@ useEffect(() => {
               </div>
             </div>
 
-                <div id="stickyNav" class="nav-container">
-                    <div
-                          style={{
-                            display: "flex",
-                            justifyContent: "center",
-                            gap: "10px",
-                            alignItems: "center",
-                            width: "100%",
-                            padding: "10px 10px",
-                            background: "#FFF",
-                          }}
-                        >
-                        <a href="#labdiamonds" class="breadcrum">Lab Diamonds</a>
-                        <a href="#naturalvslab" class="breadcrum">Natural vs Lab</a>
-                        <a href="#about" class="breadcrum">About Angara</a>
-                        <a href="#reviews" class="breadcrum">Reviews</a>
-                    </div>
-                </div>     
+            <div id="stickyNav" class="nav-container">
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  gap: "10px",
+                  alignItems: "center",
+                  width: "100%",
+                  padding: "10px 10px",
+                  background: "#FFF",
+                }}
+              >
+                <a href="#labdiamonds" className="breadcrum">
+                  Accessories
+                </a>
+                <a href="#naturalvslab" className="breadcrum">
+                  Shoes
+                </a>
+                <a href="#about" className="breadcrum">
+                  Women
+                </a>
+                <a href="#reviews" className="breadcrum">
+                  Reviews
+                </a>
+              </div>
+            </div>
           </section>
 
           {/* SECTION 2: VERSATILITY SHOWCASE - Continue Ad's Lifestyle Story */}
@@ -271,31 +280,44 @@ useEffect(() => {
             <div className="material-container">
               {/* Autoplay video of suede texture (like ad) */}
               <div className="texture-showcase">
-                <video className="texture-video" autoplay muted loop playsInline>
-                  <source src="./ad3.mp4" type="video/mp4" />
+                <video
+                  className="texture-video"
+                  autoplay
+                  muted
+                  loop
+                  playsInline
+                >
+                  <source src={Ad3} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
 
-              <div className="material-details">
-                <h3>PREMIUM SUEDE CONSTRUCTION</h3>
+              {/* Material Details Section with improved layout */}
+              <div className="material-details-wrapper">
+                <div className="material-section-header">
+                  <h2 className="material-main-title">
+                    PREMIUM SUEDE CONSTRUCTION
+                  </h2>
+                </div>
 
-                <div className="material-grid">
-                  <div className="material-point">
-                    <span className="label">UPPER</span>
-                    <span className="value">Buttery-soft suede</span>
-                  </div>
-                  <div className="material-point">
-                    <span className="label">INSOLE</span>
-                    <span className="value">Recovery foam technology</span>
-                  </div>
-                  <div className="material-point">
-                    <span className="label">DESIGN</span>
-                    <span className="value">Sleek minimal silhouette</span>
-                  </div>
-                  <div className="material-point">
-                    <span className="label">COMFORT</span>
-                    <span className="value">All-day wearability</span>
+                <div className="material-content-container">
+                  <div className="material-grid">
+                    <div className="material-point">
+                      <span className="label">UPPER</span>
+                      <span className="value">Buttery-soft suede</span>
+                    </div>
+                    <div className="material-point">
+                      <span className="label">INSOLE</span>
+                      <span className="value">Recovery foam technology</span>
+                    </div>
+                    <div className="material-point">
+                      <span className="label">DESIGN</span>
+                      <span className="value">Sleek minimal silhouette</span>
+                    </div>
+                    <div className="material-point">
+                      <span className="label">COMFORT</span>
+                      <span className="value">All-day wearability</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -439,7 +461,7 @@ useEffect(() => {
                   <div className="swiper-slide">
                     <div className="video-card">
                       <video autoPlay muted loop playsInline>
-                        <source src="/ad1.mp4" type="video/mp4" />
+                        <source src={Ad1} type="video/mp4" />
                       </video>
                       <div className="video-caption">
                         <p className="username">@mariasantos</p>
@@ -451,7 +473,7 @@ useEffect(() => {
                   <div className="swiper-slide">
                     <div className="video-card">
                       <video autoPlay muted loop playsInline>
-                        <source src="/ad2.mp4" type="video/mp4" />
+                        <source src={Ad2} type="video/mp4" />
                       </video>
                       <div className="video-caption">
                         <p className="username">@jennywong</p>
@@ -463,7 +485,7 @@ useEffect(() => {
                   <div className="swiper-slide">
                     <div className="video-card">
                       <video autoPlay muted loop playsInline>
-                        <source src="/ad3.mp4" type="video/mp4" />
+                        <source src={Ad3} type="video/mp4" />
                       </video>
                       <div className="video-caption">
                         <p className="username">@alexchen</p>
@@ -477,6 +499,47 @@ useEffect(() => {
                 <div className="swiper-button-next"></div>
                 <div className="swiper-button-prev"></div>
               </div>
+            </div>
+          </section>
+
+          {/* SECTION 6: PRODUCT COMPARISON - Find Your Perfect Fit */}
+          <section className="product-comparison" data-section="comparison">
+            <div className="comparison-container">
+              <h2 className="comparison-title">FIND YOUR PERFECT FIT</h2>
+
+              <table className="comparison-table minimal">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th className="highlighted">ALO SUNSET</th>
+                    <th>ALO RUNNER</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>BEST FOR</td>
+                    <td className="highlighted">
+                      Pilates to post-studio plans
+                    </td>
+                    <td>Running & high-impact</td>
+                  </tr>
+                  <tr>
+                    <td>MATERIAL</td>
+                    <td className="highlighted">Premium suede</td>
+                    <td>Technical mesh</td>
+                  </tr>
+                  <tr>
+                    <td>STYLE</td>
+                    <td className="highlighted">Fashion-forward</td>
+                    <td>Athletic performance</td>
+                  </tr>
+                  <tr>
+                    <td>COMFORT</td>
+                    <td className="highlighted">Recovery foam insole</td>
+                    <td>Dual-density midsole</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </section>
 
@@ -1153,6 +1216,122 @@ useEffect(() => {
           </div>
         </div>
 
+        <section
+          className="reviews-section delayed-reveal"
+          data-section="reviews"
+        >
+          <div className="reviews-container">
+            <div className="review-summary">
+              <h2>CUSTOMER REVIEWS</h2>
+              <div className="rating-overview">
+                <span className="rating">4.8</span>
+                <span className="stars">★★★★★</span>
+                <span className="count">527 Reviews</span>
+              </div>
+            </div>
+
+            <div className="review-filters">
+              <button className="filter-btn active">All</button>
+              <button className="filter-btn">Verified Purchase</button>
+              <button className="filter-btn">With Photos</button>
+            </div>
+
+            <div className="reviews-list">
+              <article className="review-card">
+                <div className="review-header">
+                  <span className="reviewer-name">Priya S.</span>
+                  <span className="verified-badge">✓ Verified</span>
+                  <span className="review-date">2 weeks ago</span>
+                </div>
+                <div className="review-rating">★★★★★</div>
+                <p className="review-text">
+                  Perfect for my lifestyle. I wear these from morning Pilates
+                  through client meetings. The suede is luxurious and they're
+                  surprisingly comfortable for all-day wear.
+                </p>
+              </article>
+
+              <article className="review-card">
+                <div className="review-header">
+                  <span className="reviewer-name">Maya K.</span>
+                  <span className="verified-badge">✓ Verified</span>
+                  <span className="review-date">1 month ago</span>
+                </div>
+                <div className="review-rating">★★★★★</div>
+                <p className="review-text">
+                  These are my go-to recovery shoes! The cloud-like cushioning
+                  feels amazing after intense workouts. Quality is exceptional
+                  and they pair beautifully with ALO sets.
+                </p>
+                <div className="review-photos">
+                  <div className="photo-indicator">📷 2 photos</div>
+                </div>
+              </article>
+
+              <article className="review-card">
+                <div className="review-header">
+                  <span className="reviewer-name">Sarah M.</span>
+                  <span className="verified-badge">✓ Verified</span>
+                  <span className="review-date">3 weeks ago</span>
+                </div>
+                <div className="review-rating">★★★★★</div>
+                <p className="review-text">
+                  Finally found my holy grail recovery slides! The suede feels
+                  premium and the memory foam is like walking on clouds. Worth
+                  every penny for post-workout comfort.
+                </p>
+              </article>
+
+              <article className="review-card">
+                <div className="review-header">
+                  <span className="reviewer-name">Anisha R.</span>
+                  <span className="verified-badge">✓ Verified</span>
+                  <span className="review-date">2 days ago</span>
+                </div>
+                <div className="review-rating">★★★★★</div>
+                <p className="review-text">
+                  Love how versatile these are! Wear them to yoga class, running
+                  errands, or just lounging at home. The quality and comfort
+                  level is unmatched. ALO never disappoints!
+                </p>
+              </article>
+
+              <article className="review-card">
+                <div className="review-header">
+                  <span className="reviewer-name">Jessica L.</span>
+                  <span className="verified-badge">✓ Verified</span>
+                  <span className="review-date">1 week ago</span>
+                </div>
+                <div className="review-rating">★★★★☆</div>
+                <p className="review-text">
+                  Beautiful slides with amazing comfort. The suede is so soft
+                  and the cushioning is perfect for recovery days. Only wish
+                  they came in more color options. Highly recommend!
+                </p>
+                <div className="review-photos">
+                  <div className="photo-indicator">📷 1 photo</div>
+                </div>
+              </article>
+
+              <article className="review-card">
+                <div className="review-header">
+                  <span className="reviewer-name">Kavya T.</span>
+                  <span className="verified-badge">✓ Verified</span>
+                  <span className="review-date">4 days ago</span>
+                </div>
+                <div className="review-rating">★★★★★</div>
+                <p className="review-text">
+                  These slides have become my daily essential! Perfect for
+                  post-workout recovery and casual wear. The premium materials
+                  and attention to detail is exactly what I expect from ALO.
+                </p>
+              </article>
+            </div>
+
+            <button className="load-more-btn">View All 527 Reviews</button>
+          </div>
+        </section>
+
         <footer className="footer">
           <p className="for-applicable">
             For applicable countries, duties &amp; taxes will be
@@ -1300,18 +1479,16 @@ useEffect(() => {
           </div>
         </footer>
 
-            <div class="sticky-cart">
-          <button class="primary-cta">Start your Forever Love Story</button>
-          <div class="secondary-cta-container">
-              <button class="secondary-cta" id="sizeComparisonBtn">
-                See Size Comparison
-              </button>
-          </div>
-          <div class="slide-text-container">
-            <div class="slide-texts">
-              <div class="troopod_delivery_info">Love More, Spend Less - 80% Savings</div>
-              <div class="troopod_delivery_info">Begin Your Journey Together</div>
-              <div class="troopod_delivery_info">Get a free jewelry gift! 🎁</div>
+        <div className="sticky-cart">
+          <button className="primary-cta">ADD TO BAG</button>
+          <div className="slide-text-container">
+            <div className="slide-texts">
+              <div className="troopod_delivery_info">
+                Complimentary Shipping
+              </div>
+              <div className="troopod_delivery_info">Premium Suede</div>
+              <div className="troopod_delivery_info">30-Day Returns</div>
+              <div className="troopod_delivery_info">Recovery Foam</div>
             </div>
           </div>
         </div>
