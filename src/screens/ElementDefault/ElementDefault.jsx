@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import Ad3 from '../../../public/ad3.mp4'
 
 export const ElementDefault = () => {
   return (
@@ -39,10 +40,14 @@ export const ElementDefault = () => {
               {/* Editorial-style gallery matching ad visuals */}
               <div className="product-gallery editorial-style">
                 <div className="main-image">
-                  <img
-                    src="./img_model.jpg"
-                    alt="Alo Sunset - premium lifestyle shot"
-                  />
+                   <video src={Ad3} 
+                        autoPlay={true}
+                        loop
+                        muted={true}
+                        onClick="this.muted = !this.muted"
+                        playsInline={true}
+                        class="video">
+                    </video>
                 </div>
                 <div className="detail-grid">
                   <img src="./img_grid1.jpg" alt="Premium suede close-up" />
@@ -912,12 +917,6 @@ export const ElementDefault = () => {
           </div>
 
           <div className="heading-how-to">HOW TO STYLE IT</div>
-
-          <img
-            className="background-4"
-            alt="Background"
-            src="/img/background-1.svg"
-          />
 
           <div className="section-sunset" />
 
