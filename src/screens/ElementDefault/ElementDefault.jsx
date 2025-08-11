@@ -1,8 +1,77 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./style.css";
 import Ad3 from '../../../public/ad3.mp4'
 
 export const ElementDefault = () => {
+
+  useEffect(() => {
+     let deliveryintervalId = null;
+
+    function initDeliveryInfo() {
+
+        setTimeout(() => {
+            const deliveryInfoElements = document.querySelectorAll('.troopod_delivery_info');
+            const deliveryInfoLength = 3;
+    
+            if (deliveryInfoElements.length === deliveryInfoLength) {
+                let currentIndex = 0;
+    
+                if (deliveryintervalId) {
+                    clearInterval(deliveryintervalId); 
+                }
+    
+                const showNextItem = function () {
+                    const currentItem = deliveryInfoElements[currentIndex];
+                    const nextIndex = (currentIndex + 1) % deliveryInfoElements.length;
+                    const nextItem = deliveryInfoElements[nextIndex];
+    
+                    if (currentItem && nextItem) {
+                        currentItem.classList.remove('active');
+                        nextItem.classList.add('active');
+                        currentIndex = nextIndex;
+                    }
+                };
+    
+                deliveryInfoElements.forEach(el => el.classList.remove('active'));
+                deliveryInfoElements[0]?.classList.add('active');
+    
+                deliveryintervalId = setInterval(showNextItem, 3000); 
+            } else {
+                initDeliveryInfo(); 
+            }
+        }, 500);
+    }
+    
+    initDeliveryInfo();
+  }, []);
+  
+useEffect(() => {
+  const nav = document.getElementById("stickyNav");
+  const navOffset = nav.offsetTop;
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > navOffset) {
+      nav.classList.add("sticky");
+    } else {
+      nav.classList.remove("sticky");
+    }
+  });
+
+}, []);
+
+useEffect(() => {
+  function setActiveBreadcrumb() {
+    const hash = window.location.hash;
+    document.querySelectorAll('.breadcrum').forEach(link => {
+      link.classList.toggle('active', link.getAttribute('href') === hash);
+    });
+  }
+
+  window.addEventListener('DOMContentLoaded', setActiveBreadcrumb);
+  window.addEventListener('hashchange', setActiveBreadcrumb);
+
+}, []);
+
   return (
     <div className="element-default">
       <div className="body">
@@ -125,6 +194,25 @@ export const ElementDefault = () => {
                 </div>
               </div>
             </div>
+
+                <div id="stickyNav" class="nav-container">
+                    <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            gap: "10px",
+                            alignItems: "center",
+                            width: "100%",
+                            padding: "10px 10px",
+                            background: "#FFF",
+                          }}
+                        >
+                        <a href="#labdiamonds" class="breadcrum">Lab Diamonds</a>
+                        <a href="#naturalvslab" class="breadcrum">Natural vs Lab</a>
+                        <a href="#about" class="breadcrum">About Angara</a>
+                        <a href="#reviews" class="breadcrum">Reviews</a>
+                    </div>
+                </div>     
           </section>
 
           {/* SECTION 2: VERSATILITY SHOWCASE - Continue Ad's Lifestyle Story */}
@@ -1211,6 +1299,22 @@ export const ElementDefault = () => {
             <div className="border-8" />
           </div>
         </footer>
+
+            <div class="sticky-cart">
+          <button class="primary-cta">Start your Forever Love Story</button>
+          <div class="secondary-cta-container">
+              <button class="secondary-cta" id="sizeComparisonBtn">
+                See Size Comparison
+              </button>
+          </div>
+          <div class="slide-text-container">
+            <div class="slide-texts">
+              <div class="troopod_delivery_info">Love More, Spend Less - 80% Savings</div>
+              <div class="troopod_delivery_info">Begin Your Journey Together</div>
+              <div class="troopod_delivery_info">Get a free jewelry gift! 🎁</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
