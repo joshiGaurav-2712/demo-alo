@@ -178,14 +178,8 @@ export const ElementDefault = () => {
             <div className="material-container">
               {/* Autoplay video of suede texture (like ad) */}
               <div className="texture-showcase">
-                <video
-                  className="texture-video"
-                  autoplay
-                  muted
-                  loop
-                  playsInline
-                >
-                  <source src="./static/ad3.mp4" type="video/mp4" />
+                <video className="texture-video" autoplay muted loop playsInline>
+                  <source src="./ad3.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
@@ -352,7 +346,7 @@ export const ElementDefault = () => {
                   <div className="swiper-slide">
                     <div className="video-card">
                       <video autoPlay muted loop playsInline>
-                        <source src="./static/ad1.mp4" type="video/mp4" />
+                        <source src="/ad1.mp4" type="video/mp4" />
                       </video>
                       <div className="video-caption">
                         <p className="username">@mariasantos</p>
@@ -364,7 +358,7 @@ export const ElementDefault = () => {
                   <div className="swiper-slide">
                     <div className="video-card">
                       <video autoPlay muted loop playsInline>
-                        <source src="./static/ad2.mp4" type="video/mp4" />
+                        <source src="/ad2.mp4" type="video/mp4" />
                       </video>
                       <div className="video-caption">
                         <p className="username">@jennywong</p>
@@ -376,7 +370,7 @@ export const ElementDefault = () => {
                   <div className="swiper-slide">
                     <div className="video-card">
                       <video autoPlay muted loop playsInline>
-                        <source src="./static/ad3.mp4" type="video/mp4" />
+                        <source src="/ad3.mp4" type="video/mp4" />
                       </video>
                       <div className="video-caption">
                         <p className="username">@alexchen</p>
