@@ -256,19 +256,13 @@ export const ElementDefault = () => {
 
                 <div className="moment">
                   <span className="time">2:00 PM</span>
-                  <img
-                    src="/img/alo-sunset-sneaker-black-m-1200x1200-jpg.png"
-                    alt="Afternoon Errands"
-                  />
+                  <img src="/img/dd.png" alt="Afternoon Errands" />
                   <p>CITY ERRANDS</p>
                 </div>
 
                 <div className="moment">
                   <span className="time">7:00 PM</span>
-                  <img
-                    src="/img/sunset-sneaker-black-pdp-1200x1200-jpg.png"
-                    alt="Evening Dinner"
-                  />
+                  <img src="/img/ce.png" alt="Evening Dinner" />
                   <p>DINNER DATE</p>
                 </div>
               </div>
@@ -276,7 +270,7 @@ export const ElementDefault = () => {
           </section>
 
           {/* SECTION 3: MATERIAL FOCUS - Premium Texture Story */}
-          <section className="material-story" data-section="materials">
+          <section className="material-focus" data-section="materials">
             <div className="material-container">
               {/* Autoplay video of suede texture (like ad) */}
               <div className="texture-showcase">
@@ -336,100 +330,85 @@ export const ElementDefault = () => {
                 <div className="swiper-wrapper">
                   <div className="swiper-slide">
                     <article className="testimonial-card">
-                      <div className="customer-image">
-                        <img
-                          src="https://images.unsplash.com/photo-1594736797933-d0d8ab2b0b0e?w=400&h=300&fit=crop&crop=face"
-                          alt="Customer styling Alo Sunset Sneakers"
-                        />
-                      </div>
                       <div className="testimonial-content">
-                        <p className="username">@sophiechen</p>
+                        <div className="quote-icon">"</div>
                         <p className="quote">
                           "Finally, a sneaker that keeps up with my day. Morning
                           yoga, client meetings, evening plans - one shoe,
                           endless possibilities."
                         </p>
-                        <p className="location">Los Angeles</p>
+                        <div className="customer-info">
+                          <p className="username">@sophiechen</p>
+                          <p className="location">Los Angeles</p>
+                        </div>
                       </div>
                     </article>
                   </div>
 
                   <div className="swiper-slide">
                     <article className="testimonial-card">
-                      <div className="customer-image">
-                        <img
-                          src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&h=300&fit=crop&crop=face"
-                          alt="Customer styling Alo Sunset Sneakers"
-                        />
-                      </div>
                       <div className="testimonial-content">
-                        <p className="username">@alexiskim</p>
+                        <div className="quote-icon">"</div>
                         <p className="quote">
                           "The suede is impossibly soft. I've never had a
                           sneaker that looks this elevated but feels this
                           comfortable."
                         </p>
-                        <p className="location">New York</p>
+                        <div className="customer-info">
+                          <p className="username">@alexiskim</p>
+                          <p className="location">New York</p>
+                        </div>
                       </div>
                     </article>
                   </div>
 
                   <div className="swiper-slide">
                     <article className="testimonial-card">
-                      <div className="customer-image">
-                        <img
-                          src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&crop=face"
-                          alt="Customer styling Alo Sunset Sneakers"
-                        />
-                      </div>
                       <div className="testimonial-content">
-                        <p className="username">@mariajones</p>
+                        <div className="quote-icon">"</div>
                         <p className="quote">
                           "Perfect for my wellness lifestyle. From Pilates class
                           to coffee dates, these sneakers are my go-to. The
                           recovery foam is a game-changer."
                         </p>
-                        <p className="location">Miami</p>
+                        <div className="customer-info">
+                          <p className="username">@mariajones</p>
+                          <p className="location">Miami</p>
+                        </div>
                       </div>
                     </article>
                   </div>
 
                   <div className="swiper-slide">
                     <article className="testimonial-card">
-                      <div className="customer-image">
-                        <img
-                          src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&h=300&fit=crop&crop=face"
-                          alt="Customer styling Alo Sunset Sneakers"
-                        />
-                      </div>
                       <div className="testimonial-content">
-                        <p className="username">@jenniferwu</p>
+                        <div className="quote-icon">"</div>
                         <p className="quote">
                           "Alo's attention to detail is unmatched. The
                           minimalist design pairs perfectly with everything in
                           my wardrobe. Pure luxury."
                         </p>
-                        <p className="location">San Francisco</p>
+                        <div className="customer-info">
+                          <p className="username">@jenniferwu</p>
+                          <p className="location">San Francisco</p>
+                        </div>
                       </div>
                     </article>
                   </div>
 
                   <div className="swiper-slide">
                     <article className="testimonial-card">
-                      <div className="customer-image">
-                        <img
-                          src="https://images.unsplash.com/photo-1506629905077-bfc0bfe0cde4?w=400&h=300&fit=crop&crop=face"
-                          alt="Customer styling Alo Sunset Sneakers"
-                        />
-                      </div>
                       <div className="testimonial-content">
-                        <p className="username">@taylorsmith</p>
+                        <div className="quote-icon">"</div>
                         <p className="quote">
                           "From studio to street seamlessly. The buttery suede
                           feels amazing and holds up beautifully. Best
                           investment I've made this year."
                         </p>
-                        <p className="location">Austin</p>
+                        <div className="customer-info">
+                          <p className="username">@taylorsmith</p>
+                          <p className="location">Austin</p>
+                        </div>
                       </div>
                     </article>
                   </div>
