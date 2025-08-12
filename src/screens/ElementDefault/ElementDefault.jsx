@@ -1021,15 +1021,6 @@ export const ElementDefault = () => {
             </p>
           </div>
 
-          <div className="container-8">
-            <div className="heading-reviews">REVIEWS</div>
-
-            <div className="horizontal-border-4">
-              <p className="text-wrapper-46">
-                No reviews have been submitted yet.
-              </p>
-            </div>
-          </div>
         </div>
 
         <section

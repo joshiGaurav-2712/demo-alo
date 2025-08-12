@@ -482,16 +482,6 @@
   width: 4px;
 }
 
-.element-default .slot-button-wrapper {
-  border-color: #cccccc;
-  border-top-style: solid;
-  border-top-width: 0.8px;
-  height: 38px;
-  left: 15px;
-  position: absolute;
-  top: 1346px;
-  width: 360px;
-}
 
 .element-default .fit {
   color: #000000;
@@ -541,7 +531,7 @@
   width: 390px;
   margin: 0;
   padding: 40px 16px;
-  top: 658px;
+  top: 718px;
 }
 
 .element-default .heading-built-for {
