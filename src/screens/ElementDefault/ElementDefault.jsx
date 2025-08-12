@@ -439,7 +439,7 @@ export const ElementDefault = () => {
           </section>
 
           {/* SECTION 5: TROOPOD - Shoppable Lifestyle Videos */}
-          <section className="troopod-section" data-section="shoppable-videos">
+          <section className="troopod-section" data-section="shoppable-videos" id="about">
             <div className="troopod-container">
               <h2 className="troopod-title">AS SEEN ON OUR COMMUNITY</h2>
 
@@ -491,7 +491,7 @@ export const ElementDefault = () => {
           </section>
 
           {/* SECTION 6: PRODUCT COMPARISON - Compare Footwear */}
-          <section className="product-comparison" data-section="comparison">
+          <section className="product-comparison" data-section="comparison" id="naturalvslab">
             <div className="comparison-container">
               <h2 className="comparison-title">FIND YOUR PERFECT FIT</h2>
 
@@ -859,7 +859,7 @@ export const ElementDefault = () => {
             </div>
           </section>
 
-          <div className="container-2">
+          <div className="container-2" id="labdiamonds">
             <div className="horizontal-border">
               <div className="text-wrapper-18">Shop the Look</div>
             </div>
