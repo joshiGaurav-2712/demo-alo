@@ -145,8 +145,20 @@ export const ElementDefault = () => {
 
                 {/* Color indicator */}
                 <div className="color-selection">
-                  <span className="color-label">Black</span>
-                  <span className="color-count">2 Colors</span>
+                  <div className="color-header">
+                    <span className="color-label">Black</span>
+                    <span className="color-count">2 Colors</span>
+                  </div>
+                  <div className="color-swatches">
+                    <div className="color-swatch">
+                      <div className="swatch-color swatch-beige"></div>
+                      <span className="swatch-label">Best Seller</span>
+                    </div>
+                    <div className="color-swatch selected">
+                      <div className="swatch-color swatch-black"></div>
+                      <span className="swatch-label">Best Seller</span>
+                    </div>
+                  </div>
                 </div>
 
                 {/* Minimal trust indicators */}
@@ -247,10 +259,7 @@ export const ElementDefault = () => {
 
                 <div className="moment">
                   <span className="time">10:00 AM</span>
-                  <img
-                    src="/img/image-by-hoiinni-containing-girl-stand-door-wear-building.png"
-                    alt="Coffee Meeting"
-                  />
+                  <img src="/img/cm.png" alt="Coffee Meeting" />
                   <p>COFFEE MEETING</p>
                 </div>
 
@@ -481,44 +490,372 @@ export const ElementDefault = () => {
             </div>
           </section>
 
-          {/* SECTION 6: PRODUCT COMPARISON - Find Your Perfect Fit */}
+          {/* SECTION 6: PRODUCT COMPARISON - Compare Footwear */}
           <section className="product-comparison" data-section="comparison">
             <div className="comparison-container">
               <h2 className="comparison-title">FIND YOUR PERFECT FIT</h2>
 
-              <table className="comparison-table minimal">
-                <thead>
-                  <tr>
-                    <th></th>
-                    <th className="highlighted">ALO SUNSET</th>
-                    <th>ALO RUNNER</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>BEST FOR</td>
-                    <td className="highlighted">
-                      Pilates to post-studio plans
-                    </td>
-                    <td>Running & high-impact</td>
-                  </tr>
-                  <tr>
-                    <td>MATERIAL</td>
-                    <td className="highlighted">Premium suede</td>
-                    <td>Technical mesh</td>
-                  </tr>
-                  <tr>
-                    <td>STYLE</td>
-                    <td className="highlighted">Fashion-forward</td>
-                    <td>Athletic performance</td>
-                  </tr>
-                  <tr>
-                    <td>COMFORT</td>
-                    <td className="highlighted">Recovery foam insole</td>
-                    <td>Dual-density midsole</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div className="container-6">
+                <div className="border-2">
+                  <div className="link-2">
+                    <div className="ALO-sunset-sneaker">
+                      ALO SUNSET
+                      <br />
+                      SNEAKER
+                    </div>
+                  </div>
+
+                  <div className="paragraph">
+                    <div className="designed-for">DESIGNED FOR</div>
+
+                    <div className="text-wrapper-25">
+                      Pilates to post-studio plans.
+                    </div>
+                  </div>
+
+                  <div className="paragraph-2">
+                    <div className="product-features">PRODUCT FEATURES</div>
+
+                    <p className="low-profile">
+                      Low-profile aesthetic,
+                      <br />
+                      recovery foam insole,
+                      <br />
+                      premium suede, fashion-
+                      <br />
+                      forward details.
+                    </p>
+                  </div>
+
+                  <div className="link-3" />
+
+                  <div className="horizontal-border-2">
+                    <div className="fit-feel">FIT &amp; FEEL</div>
+
+                    <div className="text-wrapper-26">Sleek Feel</div>
+
+                    <img
+                      className="assets"
+                      alt="Assets"
+                      src="/img/assets-2faa96744e7fe74e2a90d22918299c1f1d-2fcfdf6b76e89e403cb87f-1.svg"
+                    />
+
+                    <div className="text-wrapper-27">Recovery Foam Insole</div>
+
+                    <div className="assets-2" />
+
+                    <div className="text-wrapper-28">Lightweight</div>
+
+                    <div className="assets-3">
+                      <div className="assets-wrapper">
+                        <div className="assets-4">
+                          <img
+                            className="vector-4"
+                            alt="Vector"
+                            src="/img/vector-5.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="paragraph-3">
+                    <div className="material">MATERIAL</div>
+
+                    <div className="text-wrapper-29">Premium suede.</div>
+                  </div>
+                </div>
+
+                <div className="border-3">
+                  <div className="alo-runner-wrapper">
+                    <div className="alo-runner">ALO RUNNER</div>
+                  </div>
+
+                  <div className="paragraph-4">
+                    <div className="designed-for-2">DESIGNED FOR</div>
+
+                    <p className="stability-and">
+                      Stability and support on
+                      <br />
+                      street, trail, track, or sand.
+                    </p>
+                  </div>
+
+                  <div className="paragraph-5">
+                    <div className="product-features">PRODUCT FEATURES</div>
+
+                    <p className="stabilizing-heel">
+                      Stabilizing heel clip, dual-
+                      <br />
+                      density midsole, multi-terrain
+                      <br />
+                      outsole grip pods, and
+                      <br />
+                      reflective details.
+                    </p>
+                  </div>
+
+                  <div className="link-4" />
+
+                  <div className="horizontal-border-3">
+                    <div className="fit-feel">FIT &amp; FEEL</div>
+
+                    <div className="text-wrapper-30">Lightweight</div>
+
+                    <div className="assets">
+                      <div className="assets-wrapper">
+                        <div className="assets-4">
+                          <img
+                            className="vector-4"
+                            alt="Vector"
+                            src="/img/vector-6.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="text-wrapper-31">Extra-Firm Cushioning</div>
+
+                    <div className="assets-5" />
+
+                    <div className="text-wrapper-32">Flexible</div>
+
+                    <img
+                      className="assets-3"
+                      alt="Assets"
+                      src="/img/assets-2faa96744e7fe74e2a90d22918299c1f1d-2fed9c5fb62c164867816c.svg"
+                    />
+                  </div>
+
+                  <div className="paragraph-6">
+                    <div className="material-2">MATERIAL</div>
+
+                    <p className="breathable-double">
+                      Breathable double-layer
+                      <br />
+                      mesh upper is made with
+                      <br />
+                      70% recycled materials.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="border-4">
+                  <div className="link-2">
+                    <div className="ALO-recovery-mode">
+                      ALO RECOVERY
+                      <br />
+                      MODE
+                    </div>
+                  </div>
+
+                  <div className="paragraph-4">
+                    <div className="designed-for-2">DESIGNED FOR</div>
+
+                    <p className="a-clean-modern">
+                      A clean &amp; modern
+                      <br />
+                      streetwear look.
+                    </p>
+                  </div>
+
+                  <div className="paragraph-5">
+                    <div className="product-features">PRODUCT FEATURES</div>
+
+                    <p className="ultra-cushioned">
+                      Ultra-cushioned comfort
+                      <br />
+                      collar, seamless no-slip
+                      <br />
+                      interior support, and long-
+                      <br />
+                      lasting rubber soles.
+                    </p>
+                  </div>
+
+                  <div className="link-5" />
+
+                  <div className="horizontal-border-3">
+                    <div className="fit-feel">FIT &amp; FEEL</div>
+
+                    <div className="text-wrapper-33">Cloud-Like Feel</div>
+
+                    <div className="assets">
+                      <div className="assets-wrapper">
+                        <div className="assets-4">
+                          <img
+                            className="vector-5"
+                            alt="Vector"
+                            src="/img/vector-7.png"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="text-wrapper-34">High-Rebound</div>
+
+                    <div className="assets-2" />
+
+                    <div className="text-wrapper-35">Sleek Feel</div>
+
+                    <img
+                      className="assets-3"
+                      alt="Assets"
+                      src="/img/assets-2faa96744e7fe74e2a90d22918299c1f1d-2fcfdf6b76e89e403cb87f.png"
+                    />
+                  </div>
+
+                  <div className="paragraph-7">
+                    <div className="material">MATERIAL</div>
+
+                    <div className="text-wrapper-36">
+                      Made from vegan leather.
+                    </div>
+                  </div>
+                </div>
+
+                <div className="border-5">
+                  <div className="recovery-slipper-wrapper">
+                    <div className="recovery-slipper">RECOVERY SLIPPER</div>
+                  </div>
+
+                  <div className="paragraph">
+                    <div className="designed-for">DESIGNED FOR</div>
+
+                    <div className="text-wrapper-37">
+                      Sleek all-day recovery.
+                    </div>
+                  </div>
+
+                  <div className="paragraph-8">
+                    <div className="product-features">PRODUCT FEATURES</div>
+
+                    <p className="lightweight">
+                      Lightweight &amp; cushioned
+                      <br />
+                      feel, high-rebound recovery
+                      <br />
+                      foam insole, soft faux fur
+                      <br />
+                      lining, and slip-resistant
+                      <br />
+                      rubber sole.
+                    </p>
+                  </div>
+
+                  <div className="link-6" />
+
+                  <div className="horizontal-border-2">
+                    <div className="fit-feel">FIT &amp; FEEL</div>
+
+                    <div className="text-wrapper-33">Cloud-Like Feel</div>
+
+                    <div className="assets">
+                      <div className="assets-wrapper">
+                        <div className="assets-4">
+                          <img
+                            className="vector-5"
+                            alt="Vector"
+                            src="/img/vector-8.png"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="text-wrapper-34">High-Rebound</div>
+
+                    <div className="assets-2" />
+
+                    <div className="text-wrapper-38">Cozy Fit</div>
+
+                    <img
+                      className="assets-3"
+                      alt="Assets"
+                      src="/img/assets-2faa96744e7fe74e2a90d22918299c1f1d-2f4431aabea2d34019b964.png"
+                    />
+                  </div>
+
+                  <div className="paragraph-9">
+                    <div className="material">MATERIAL</div>
+
+                    <div className="text-wrapper-39">
+                      Premium suede exterior.
+                    </div>
+                  </div>
+                </div>
+
+                <div className="border-6">
+                  <div className="IT-slide-wrapper">
+                    <div className="IT-slide">IT SLIDE</div>
+                  </div>
+
+                  <div className="paragraph">
+                    <div className="designed-for">DESIGNED FOR</div>
+
+                    <div className="text-wrapper-40">
+                      Pre- and post-workout looks.
+                    </div>
+                  </div>
+
+                  <div className="paragraph-10">
+                    <div className="product-features">PRODUCT FEATURES</div>
+
+                    <p className="padded-strap-non">
+                      Padded strap, non-slip grip,
+                      <br />
+                      and single-density foam
+                      <br />
+                      sole.
+                    </p>
+                  </div>
+
+                  <div className="link-7" />
+
+                  <div className="horizontal-border-2">
+                    <div className="fit-feel">FIT &amp; FEEL</div>
+
+                    <div className="text-wrapper-33">Cloud-Like Feel</div>
+
+                    <div className="assets">
+                      <div className="assets-wrapper">
+                        <div className="assets-4">
+                          <img
+                            className="vector-5"
+                            alt="Vector"
+                            src="/img/vector-8.png"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="text-wrapper-41">Non-Slip</div>
+
+                    <img
+                      className="assets-6"
+                      alt="Assets"
+                      src="/img/assets-2faa96744e7fe74e2a90d22918299c1f1d-2fcc8069db3e514b0db9ff.png"
+                    />
+
+                    <div className="text-wrapper-42">Water Resistant</div>
+
+                    <img
+                      className="assets-3"
+                      alt="Assets"
+                      src="/img/assets-2faa96744e7fe74e2a90d22918299c1f1d-2f9ebf962cbf6e4e9182f2.png"
+                    />
+                  </div>
+
+                  <div className="paragraph-11">
+                    <div className="material-2">MATERIAL</div>
+
+                    <div className="cloud-like-EVA">
+                      Cloud-like EVA-injected
+                      <br />
+                      insole.
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
 
@@ -684,506 +1021,6 @@ export const ElementDefault = () => {
             </p>
           </div>
 
-          <div className="container-5">
-            <div className="heading-compare">COMPARE FOOTWEAR</div>
-
-            <div className="container-6">
-              <div className="border-2">
-                <div className="link-2">
-                  <div className="ALO-sunset-sneaker">
-                    ALO SUNSET
-                    <br />
-                    SNEAKER
-                  </div>
-                </div>
-
-                <div className="paragraph">
-                  <div className="designed-for">DESIGNED FOR</div>
-
-                  <div className="text-wrapper-25">
-                    Pilates to post-studio plans.
-                  </div>
-                </div>
-
-                <div className="paragraph-2">
-                  <div className="product-features">PRODUCT FEATURES</div>
-
-                  <p className="low-profile">
-                    Low-profile aesthetic,
-                    <br />
-                    recovery foam insole,
-                    <br />
-                    premium suede, fashion-
-                    <br />
-                    forward details.
-                  </p>
-                </div>
-
-                <div className="link-3" />
-
-                <div className="horizontal-border-2">
-                  <div className="fit-feel">FIT &amp; FEEL</div>
-
-                  <div className="text-wrapper-26">Sleek Feel</div>
-
-                  <img
-                    className="assets"
-                    alt="Assets"
-                    src="/img/assets-2faa96744e7fe74e2a90d22918299c1f1d-2fcfdf6b76e89e403cb87f-1.svg"
-                  />
-
-                  <div className="text-wrapper-27">Recovery Foam Insole</div>
-
-                  <div className="assets-2" />
-
-                  <div className="text-wrapper-28">Lightweight</div>
-
-                  <div className="assets-3">
-                    <div className="assets-wrapper">
-                      <div className="assets-4">
-                        <img
-                          className="vector-4"
-                          alt="Vector"
-                          src="/img/vector-5.svg"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="paragraph-3">
-                  <div className="material">MATERIAL</div>
-
-                  <div className="text-wrapper-29">Premium suede.</div>
-                </div>
-              </div>
-
-              <div className="border-3">
-                <div className="alo-runner-wrapper">
-                  <div className="alo-runner">ALO RUNNER</div>
-                </div>
-
-                <div className="paragraph-4">
-                  <div className="designed-for-2">DESIGNED FOR</div>
-
-                  <p className="stability-and">
-                    Stability and support on
-                    <br />
-                    street, trail, track, or sand.
-                  </p>
-                </div>
-
-                <div className="paragraph-5">
-                  <div className="product-features">PRODUCT FEATURES</div>
-
-                  <p className="stabilizing-heel">
-                    Stabilizing heel clip, dual-
-                    <br />
-                    density midsole, multi-terrain
-                    <br />
-                    outsole grip pods, and
-                    <br />
-                    reflective details.
-                  </p>
-                </div>
-
-                <div className="link-4" />
-
-                <div className="horizontal-border-3">
-                  <div className="fit-feel">FIT &amp; FEEL</div>
-
-                  <div className="text-wrapper-30">Lightweight</div>
-
-                  <div className="assets">
-                    <div className="assets-wrapper">
-                      <div className="assets-4">
-                        <img
-                          className="vector-4"
-                          alt="Vector"
-                          src="/img/vector-6.svg"
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="text-wrapper-31">Extra-Firm Cushioning</div>
-
-                  <div className="assets-5" />
-
-                  <div className="text-wrapper-32">Flexible</div>
-
-                  <img
-                    className="assets-3"
-                    alt="Assets"
-                    src="/img/assets-2faa96744e7fe74e2a90d22918299c1f1d-2fed9c5fb62c164867816c.svg"
-                  />
-                </div>
-
-                <div className="paragraph-6">
-                  <div className="material-2">MATERIAL</div>
-
-                  <p className="breathable-double">
-                    Breathable double-layer
-                    <br />
-                    mesh upper is made with
-                    <br />
-                    70% recycled materials.
-                  </p>
-                </div>
-              </div>
-
-              <div className="border-4">
-                <div className="link-2">
-                  <div className="ALO-recovery-mode">
-                    ALO RECOVERY
-                    <br />
-                    MODE
-                  </div>
-                </div>
-
-                <div className="paragraph-4">
-                  <div className="designed-for-2">DESIGNED FOR</div>
-
-                  <p className="a-clean-modern">
-                    A clean &amp; modern
-                    <br />
-                    streetwear look.
-                  </p>
-                </div>
-
-                <div className="paragraph-5">
-                  <div className="product-features">PRODUCT FEATURES</div>
-
-                  <p className="ultra-cushioned">
-                    Ultra-cushioned comfort
-                    <br />
-                    collar, seamless no-slip
-                    <br />
-                    interior support, and long-
-                    <br />
-                    lasting rubber soles.
-                  </p>
-                </div>
-
-                <div className="link-5" />
-
-                <div className="horizontal-border-3">
-                  <div className="fit-feel">FIT &amp; FEEL</div>
-
-                  <div className="text-wrapper-33">Cloud-Like Feel</div>
-
-                  <div className="assets">
-                    <div className="assets-wrapper">
-                      <div className="assets-4">
-                        <img
-                          className="vector-5"
-                          alt="Vector"
-                          src="/img/vector-7.png"
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="text-wrapper-34">High-Rebound</div>
-
-                  <div className="assets-2" />
-
-                  <div className="text-wrapper-35">Sleek Feel</div>
-
-                  <img
-                    className="assets-3"
-                    alt="Assets"
-                    src="/img/assets-2faa96744e7fe74e2a90d22918299c1f1d-2fcfdf6b76e89e403cb87f.png"
-                  />
-                </div>
-
-                <div className="paragraph-7">
-                  <div className="material">MATERIAL</div>
-
-                  <div className="text-wrapper-36">
-                    Made from vegan leather.
-                  </div>
-                </div>
-              </div>
-
-              <div className="border-5">
-                <div className="recovery-slipper-wrapper">
-                  <div className="recovery-slipper">RECOVERY SLIPPER</div>
-                </div>
-
-                <div className="paragraph">
-                  <div className="designed-for">DESIGNED FOR</div>
-
-                  <div className="text-wrapper-37">Sleek all-day recovery.</div>
-                </div>
-
-                <div className="paragraph-8">
-                  <div className="product-features">PRODUCT FEATURES</div>
-
-                  <p className="lightweight">
-                    Lightweight &amp; cushioned
-                    <br />
-                    feel, high-rebound recovery
-                    <br />
-                    foam insole, soft faux fur
-                    <br />
-                    lining, and slip-resistant
-                    <br />
-                    rubber sole.
-                  </p>
-                </div>
-
-                <div className="link-6" />
-
-                <div className="horizontal-border-2">
-                  <div className="fit-feel">FIT &amp; FEEL</div>
-
-                  <div className="text-wrapper-33">Cloud-Like Feel</div>
-
-                  <div className="assets">
-                    <div className="assets-wrapper">
-                      <div className="assets-4">
-                        <img
-                          className="vector-5"
-                          alt="Vector"
-                          src="/img/vector-8.png"
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="text-wrapper-34">High-Rebound</div>
-
-                  <div className="assets-2" />
-
-                  <div className="text-wrapper-38">Cozy Fit</div>
-
-                  <img
-                    className="assets-3"
-                    alt="Assets"
-                    src="/img/assets-2faa96744e7fe74e2a90d22918299c1f1d-2f4431aabea2d34019b964.png"
-                  />
-                </div>
-
-                <div className="paragraph-9">
-                  <div className="material">MATERIAL</div>
-
-                  <div className="text-wrapper-39">Premium suede exterior.</div>
-                </div>
-              </div>
-
-              <div className="border-6">
-                <div className="IT-slide-wrapper">
-                  <div className="IT-slide">IT SLIDE</div>
-                </div>
-
-                <div className="paragraph">
-                  <div className="designed-for">DESIGNED FOR</div>
-
-                  <div className="text-wrapper-40">
-                    Pre- and post-workout looks.
-                  </div>
-                </div>
-
-                <div className="paragraph-10">
-                  <div className="product-features">PRODUCT FEATURES</div>
-
-                  <p className="padded-strap-non">
-                    Padded strap, non-slip grip,
-                    <br />
-                    and single-density foam
-                    <br />
-                    sole.
-                  </p>
-                </div>
-
-                <div className="link-7" />
-
-                <div className="horizontal-border-2">
-                  <div className="fit-feel">FIT &amp; FEEL</div>
-
-                  <div className="text-wrapper-33">Cloud-Like Feel</div>
-
-                  <div className="assets">
-                    <div className="assets-wrapper">
-                      <div className="assets-4">
-                        <img
-                          className="vector-5"
-                          alt="Vector"
-                          src="/img/vector-8.png"
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="text-wrapper-41">Non-Slip</div>
-
-                  <img
-                    className="assets-6"
-                    alt="Assets"
-                    src="/img/assets-2faa96744e7fe74e2a90d22918299c1f1d-2fcc8069db3e514b0db9ff.png"
-                  />
-
-                  <div className="text-wrapper-42">Water Resistant</div>
-
-                  <img
-                    className="assets-3"
-                    alt="Assets"
-                    src="/img/assets-2faa96744e7fe74e2a90d22918299c1f1d-2f9ebf962cbf6e4e9182f2.png"
-                  />
-                </div>
-
-                <div className="paragraph-11">
-                  <div className="material-2">MATERIAL</div>
-
-                  <div className="cloud-like-EVA">
-                    Cloud-like EVA-injected
-                    <br />
-                    insole.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="heading-how-to">HOW TO STYLE IT</div>
-
-          <div className="section-sunset" />
-
-          <div className="paragraph-12">
-            <div className="heading-style">STYLE INSPIRATION</div>
-
-            <p className="text-wrapper-43">
-              Shop our best looks, styled by you
-            </p>
-          </div>
-
-          <div className="container-7">
-            <div className="group-4">
-              <div className="text-wrapper-44">@hoiinni</div>
-
-              <div className="overlap-group-2">
-                <img className="button-5" alt="Button" src="/img/button.svg" />
-
-                <img
-                  className="button-6"
-                  alt="Button"
-                  src="/img/button-1.svg"
-                />
-
-                <img
-                  className="button-7"
-                  alt="Button"
-                  src="/img/button-2.svg"
-                />
-              </div>
-            </div>
-
-            <div className="group-5">
-              <div className="text-wrapper-45">@cindymello</div>
-
-              <div className="overlap-2">
-                <img
-                  className="button-8"
-                  alt="Button"
-                  src="/img/button-3.svg"
-                />
-
-                <img
-                  className="button-9"
-                  alt="Button"
-                  src="/img/button-4.svg"
-                />
-
-                <img
-                  className="button-10"
-                  alt="Button"
-                  src="/img/button-5.svg"
-                />
-              </div>
-            </div>
-
-            <div className="group-6">
-              <div className="overlay-shadow-wrapper">
-                <div className="overlay-shadow" />
-              </div>
-
-              <div className="button-11">
-                <div className="overlay-shadow" />
-              </div>
-            </div>
-
-            <div className="group-7">
-              <div className="button-12">
-                <div className="overlay-shadow" />
-              </div>
-
-              <div className="button-13">
-                <div className="overlay-shadow" />
-              </div>
-            </div>
-
-            <img className="group-8" alt="Group" src="/img/group-5-12.png" />
-
-            <div className="button-wrapper">
-              <div className="button-14">
-                <div className="overlay-shadow" />
-              </div>
-            </div>
-
-            <div className="group-9">
-              <div className="button-15">
-                <div className="overlay-shadow" />
-              </div>
-
-              <div className="button-16">
-                <div className="overlay-shadow" />
-              </div>
-            </div>
-
-            <div className="group-10">
-              <div className="button-17">
-                <div className="overlay-shadow" />
-              </div>
-
-              <div className="button-18">
-                <div className="overlay-shadow" />
-              </div>
-            </div>
-
-            <div className="group-11">
-              <div className="button-19">
-                <div className="overlay-shadow" />
-              </div>
-
-              <div className="button-20">
-                <div className="overlay-shadow" />
-              </div>
-            </div>
-
-            <div className="group-12">
-              <div className="button-21">
-                <div className="overlay-shadow" />
-              </div>
-            </div>
-
-            <div className="group-13">
-              <div className="button-22">
-                <div className="overlay-shadow" />
-              </div>
-
-              <div className="button-23">
-                <div className="overlay-shadow" />
-              </div>
-            </div>
-
-            <div className="group-14">
-              <div className="button-24">
-                <div className="overlay-shadow" />
-              </div>
-            </div>
-          </div>
-
           <div className="container-8">
             <div className="heading-reviews">REVIEWS</div>
 
@@ -1198,14 +1035,15 @@ export const ElementDefault = () => {
         <section
           className="reviews-section delayed-reveal"
           data-section="reviews"
+          id="reviews"
         >
           <div className="reviews-container">
             <div className="review-summary">
               <h2>CUSTOMER REVIEWS</h2>
               <div className="rating-overview">
-                <span className="rating">4.8</span>
-                <span className="stars">★★★★★</span>
-                <span className="count">527 Reviews</span>
+                <span className="rating">3.2</span>
+                <span className="stars">★★★☆☆</span>
+                <span className="count">Based on 800+ Reviews</span>
               </div>
             </div>
 
@@ -1218,75 +1056,52 @@ export const ElementDefault = () => {
             <div className="reviews-list">
               <article className="review-card">
                 <div className="review-header">
-                  <span className="reviewer-name">Priya S.</span>
+                  <span className="reviewer-name">Faisal S.</span>
                   <span className="verified-badge">✓ Verified</span>
-                  <span className="review-date">2 weeks ago</span>
+                  <span className="review-date">Jul 26, 2025</span>
                 </div>
                 <div className="review-rating">★★★★★</div>
                 <p className="review-text">
-                  Perfect for my lifestyle. I wear these from morning Pilates
-                  through client meetings. The suede is luxurious and they're
-                  surprisingly comfortable for all-day wear.
+                  Beyond my expectations✨🌟 I actually feel extremely fortunate
+                  that I'm one of the rare individuals that had a really good
+                  experience on Aloyoga com. I was able to receive a new
+                  replacement jacket very quickly and was even able to return
+                  the duplicate jacket for a refund so I am beyond happy.
                 </p>
+                <div className="review-source">Source: Trustpilot</div>
               </article>
 
               <article className="review-card">
                 <div className="review-header">
-                  <span className="reviewer-name">Maya K.</span>
+                  <span className="reviewer-name">Emma F.</span>
                   <span className="verified-badge">✓ Verified</span>
-                  <span className="review-date">1 month ago</span>
+                  <span className="review-date">Jul 31, 2025</span>
                 </div>
-                <div className="review-rating">★★★★★</div>
+                <div className="review-rating">★★★☆☆</div>
                 <p className="review-text">
-                  These are my go-to recovery shoes! The cloud-like cushioning
-                  feels amazing after intense workouts. Quality is exceptional
-                  and they pair beautifully with ALO sets.
+                  I've been really happy with the comfort and fit of these
+                  shorts. However, after only wearing them three times, I have
+                  noticed that the brand logo printed on the leg is already
+                  starting to peel off, which is disappointing, given the price.
                 </p>
-                <div className="review-photos">
-                  <div className="photo-indicator">📷 2 photos</div>
-                </div>
+                <div className="review-source">Source: Trustpilot</div>
               </article>
 
               <article className="review-card">
                 <div className="review-header">
-                  <span className="reviewer-name">Sarah M.</span>
+                  <span className="reviewer-name">Albert N.</span>
                   <span className="verified-badge">✓ Verified</span>
-                  <span className="review-date">3 weeks ago</span>
+                  <span className="review-date">Jul 8, 2025</span>
                 </div>
-                <div className="review-rating">★★★★★</div>
+                <div className="review-rating">★★★☆☆</div>
                 <p className="review-text">
-                  Finally found my holy grail recovery slides! The suede feels
-                  premium and the memory foam is like walking on clouds. Worth
-                  every penny for post-workout comfort.
+                  Customer support confirmed quality was intentional, despite
+                  using the full-size product's price and name in the promotion.
+                  While they were polite and responsive, the way this was
+                  presented felt misleading. I hope Alo improves how they
+                  communicate such offers in the future.
                 </p>
-              </article>
-
-              <article className="review-card">
-                <div className="review-header">
-                  <span className="reviewer-name">Anisha R.</span>
-                  <span className="verified-badge">✓ Verified</span>
-                  <span className="review-date">2 days ago</span>
-                </div>
-                <div className="review-rating">★★★★★</div>
-                <p className="review-text">
-                  Love how versatile these are! Wear them to yoga class, running
-                  errands, or just lounging at home. The quality and comfort
-                  level is unmatched. ALO never disappoints!
-                </p>
-              </article>
-
-              <article className="review-card">
-                <div className="review-header">
-                  <span className="reviewer-name">Jessica L.</span>
-                  <span className="verified-badge">✓ Verified</span>
-                  <span className="review-date">1 week ago</span>
-                </div>
-                <div className="review-rating">★★★★☆</div>
-                <p className="review-text">
-                  Beautiful slides with amazing comfort. The suede is so soft
-                  and the cushioning is perfect for recovery days. Only wish
-                  they came in more color options. Highly recommend!
-                </p>
+                <div className="review-source">Source: Trustpilot</div>
                 <div className="review-photos">
                   <div className="photo-indicator">📷 1 photo</div>
                 </div>
@@ -1294,20 +1109,58 @@ export const ElementDefault = () => {
 
               <article className="review-card">
                 <div className="review-header">
-                  <span className="reviewer-name">Kavya T.</span>
+                  <span className="reviewer-name">GeorgiaV</span>
                   <span className="verified-badge">✓ Verified</span>
-                  <span className="review-date">4 days ago</span>
+                  <span className="review-date">Jul 27, 2025</span>
+                </div>
+                <div className="review-rating">★☆☆☆☆</div>
+                <p className="review-text">
+                  Extremely Disappointed with ALO Yoga. I recently made my first
+                  purchase from ALO Yoga through their app, using their 15%
+                  welcome discount. While shopping, the app kept showing pop-ups
+                  encouraging me to "spend a little more" to qualify for the
+                  free welcome tote. This feels misleading and manipulative.
+                </p>
+                <div className="review-source">Source: Trustpilot</div>
+              </article>
+
+              <article className="review-card">
+                <div className="review-header">
+                  <span className="reviewer-name">kris_syslo_alo</span>
+                  <span className="verified-badge">✓ Verified</span>
+                  <span className="review-date">11 hr ago</span>
                 </div>
                 <div className="review-rating">★★★★★</div>
                 <p className="review-text">
-                  These slides have become my daily essential! Perfect for
-                  post-workout recovery and casual wear. The premium materials
-                  and attention to detail is exactly what I expect from ALO.
+                  Come back from Costa Rica! Welcome home. My first alo bra!
+                  Love the fit and quality. Perfect for my yoga practice and the
+                  material feels amazing against the skin. Great for travel too!
                 </p>
+                <div className="review-source">Source: Reddit r/aloyoga</div>
+                <div className="review-photos">
+                  <div className="photo-indicator">📷 2 photos</div>
+                </div>
+              </article>
+
+              <article className="review-card">
+                <div className="review-header">
+                  <span className="reviewer-name">Ashleigh S.</span>
+                  <span className="verified-badge">✓ Verified</span>
+                  <span className="review-date">Jul 17, 2025</span>
+                </div>
+                <div className="review-rating">★★☆☆☆</div>
+                <p className="review-text">
+                  I spent quite abit of money on some Alo products as I was
+                  curious about the hype. Followed washing instructions and wore
+                  the sweatshirt 1 time and noticed threads had come out and
+                  made a hole. The material felt like an Amazon sweater with the
+                  brand printed on it.
+                </p>
+                <div className="review-source">Source: Trustpilot</div>
               </article>
             </div>
 
-            <button className="load-more-btn">View All 527 Reviews</button>
+            <button className="load-more-btn">View All 800+ Reviews</button>
           </div>
         </section>
 
@@ -1465,9 +1318,11 @@ export const ElementDefault = () => {
               <div className="troopod_delivery_info">
                 Complimentary Shipping
               </div>
-              <div className="troopod_delivery_info">Premium Suede</div>
+              <div className="troopod_delivery_info">
+                Complimentary Shipping
+              </div>
               <div className="troopod_delivery_info">30-Day Returns</div>
-              <div className="troopod_delivery_info">Recovery Foam</div>
+              <div className="troopod_delivery_info">Same-Day Delivery</div>
             </div>
           </div>
         </div>
