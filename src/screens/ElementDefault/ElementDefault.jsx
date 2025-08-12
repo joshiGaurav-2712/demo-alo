@@ -237,7 +237,7 @@ export const ElementDefault = () => {
           </section>
 
           {/* SECTION 2: VERSATILITY SHOWCASE - Continue Ad's Lifestyle Story */}
-          <section className="style-versatility" data-section="versatility">
+          <section className="style-versatility" data-section="versatility" id="labdiamonds">
             <div className="versatility-container">
               <h2 className="section-title-editorial">
                 FROM PILATES TO POST-STUDIO PLANS
@@ -296,7 +296,7 @@ export const ElementDefault = () => {
               </div>
 
               {/* Material Details Section with improved layout */}
-              <div className="material-details-wrapper">
+              <div className="material-details-wrapper" id="naturalvslab">
                 <div className="material-section-header">
                   <h2 className="material-main-title">
                     PREMIUM SUEDE CONSTRUCTION
@@ -491,7 +491,7 @@ export const ElementDefault = () => {
           </section>
 
           {/* SECTION 6: PRODUCT COMPARISON - Compare Footwear */}
-          <section className="product-comparison" data-section="comparison" id="naturalvslab">
+          <section className="product-comparison" data-section="comparison">
             <div className="comparison-container">
               <h2 className="comparison-title">FIND YOUR PERFECT FIT</h2>
 
@@ -859,7 +859,7 @@ export const ElementDefault = () => {
             </div>
           </section>
 
-          <div className="container-2" id="labdiamonds">
+          <div className="container-2">
             <div className="horizontal-border">
               <div className="text-wrapper-18">Shop the Look</div>
             </div>
