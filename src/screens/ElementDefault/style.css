@@ -4592,6 +4592,7 @@
 
 .element-default .reviews-section.delayed-reveal {
   animation: fadeInUp 1s ease 0.3s forwards;
+  top:840px;
 }
 
 .element-default .reviews-container {
