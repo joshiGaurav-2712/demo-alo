@@ -221,13 +221,13 @@ export const ElementDefault = () => {
                 }}
               >
                 <a href="#labdiamonds" className="breadcrum">
-                  Accessories
+                  Highlights
                 </a>
                 <a href="#naturalvslab" className="breadcrum">
-                  Shoes
+                  Features
                 </a>
                 <a href="#about" className="breadcrum">
-                  Women
+                  Community
                 </a>
                 <a href="#reviews" className="breadcrum">
                   Reviews
@@ -430,7 +430,7 @@ export const ElementDefault = () => {
 
               {/* Subtle transition to reviews */}
               <div className="review-teaser">
-                <p className="review-text">Loved by 527 customers worldwide</p>
+                <p className="review-text">Loved by hundreds of customers worldwide</p>
                 <a href="#reviews" className="subtle-link">
                   See all reviews →
                 </a>
