@@ -952,7 +952,7 @@ export const ElementDefault = () => {
               </div>
             </div>
 
-            <div className="slot-button-wrapper">
+            <div className="slot-button-wrapper" style={{borderTop:"0.1px solid #e9e1e1",paddingTop:"5px",paddingBottom:"10px"}}>
               <div className="slot-button">
                 <div className="fit">FIT</div>
 
@@ -1034,7 +1034,7 @@ export const ElementDefault = () => {
               <div className="rating-overview">
                 <span className="rating">3.2</span>
                 <span className="stars">★★★☆☆</span>
-                <span className="count">Based on 800+ Reviews</span>
+                <span className="count">Based on 527+ Reviews</span>
               </div>
             </div>
 
@@ -1151,7 +1151,7 @@ export const ElementDefault = () => {
               </article>
             </div>
 
-            <button className="load-more-btn">View All 800+ Reviews</button>
+            <button className="load-more-btn">View All 527+ Reviews</button>
           </div>
         </section>
 
